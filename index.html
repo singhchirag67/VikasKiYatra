@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Ki Yatra | Premium Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        hindi: ['"Tiro Devanagari Hindi"', 'serif'],
+                    },
+                    colors: {
+                        premium: {
+                            bg: '#050505',       /* Deep Midnight Black */
+                            card: '#121212',     /* Slightly lighter black for depth */
+                            gold: '#D4AF37',     /* Metallic Gold */
+                            goldLight: '#F3E5AB',
+                            muted: '#A3A3A3'     /* Elegant Gray */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for the video slider but keep functionality */
+        .hide-scroll-bar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .hide-scroll-bar::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Premium Gold Text Gradient */
+        .gold-gradient {
+            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Subtle Card Glow on Hover */
+        .premium-card {
+            border: 1px solid #222;
+            transition: all 0.4s ease;
+        }
+        .premium-card:hover {
+            border-color: #D4AF37;
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-premium-bg text-white font-sans antialiased selection:bg-premium-gold selection:text-black">
+
+    <nav class="fixed w-full z-50 bg-premium-bg/80 backdrop-blur-lg border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 font-serif font-bold text-2xl tracking-widest gold-gradient">
+                    #VikasKiYatra
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm uppercase tracking-widest text-premium-muted">
+                        <a href="#home" class="hover:text-premium-gold transition duration-300">Home</a>
+                        <a href="#about" class="hover:text-premium-gold transition duration-300">About</a>
+                        <a href="#shorts" class="hover:text-premium-gold transition duration-300">Shorts</a>
+                        <a href="#pillars" class="hover:text-premium-gold transition duration-300">Pillars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex flex-col justify-center items-center text-center relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-premium-gold opacity-[0.03] blur-[100px] rounded-full pointer-events-none"></div>
+
+        <h1 class="text-5xl md:text-8xl font-serif font-bold mb-6 tracking-tight">
+            The Journey of <br/> <span class="gold-gradient">Thought</span>
+        </h1>
+        
+        <div class="h-12 md:h-16 mt-2">
+            <p id="typewriter" class="font-hindi text-xl md:text-3xl text-premium-goldLight font-light"></p>
+        </div>
+
+        <p class="mt-6 max-w-2xl text-lg text-premium-muted font-light leading-relaxed">
+            Curating the finest perspectives on Cricket, dissecting Current Affairs, and weaving reality into Poetry.
+        </p>
+        
+        <div class="mt-12 flex flex-wrap justify-center gap-6">
+            <a href="#shorts" class="bg-premium-gold hover:bg-yellow-600 text-black font-semibold py-4 px-10 rounded-none border border-premium-gold transition duration-300 uppercase tracking-widest text-sm">
+                Explore Content
+            </a>
+            <a href="https://youtube.com/@vikaskiyatra-m5k" target="_blank" class="bg-transparent hover:bg-white/5 text-white font-semibold py-4 px-10 rounded-none border border-white/20 transition duration-300 uppercase tracking-widest text-sm flex items-center gap-2">
+                <i class="fa-brands fa-youtube text-red-500"></i> YouTube
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-premium-card px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="aspect-square bg-premium-bg border border-premium-gold/30 rounded-full flex items-center justify-center p-8 relative z-10">
+                    <i class="fa-solid fa-microphone-lines text-9xl text-premium-gold opacity-80"></i>
+                </div>
+                <div class="absolute -bottom-4 -right-4 w-full h-full border-2 border-premium-gold/20 rounded-full z-0"></div>
+            </div>
+            
+            <div>
+                <h2 class="text-xs uppercase tracking-[0.3em] text-premium-gold mb-2">The Creator</h2>
+                <h3 class="text-4xl md:text-5xl font-serif font-bold mb-6">More Than Just A Page</h3>
+                <p class="text-premium-muted mb-6 leading-relaxed">
+                    Vikas Ki Yatra translates to "The Journey of Progress" — but it is not just a journey of miles; it is a journey of the mind. In a world of noise, this platform was created to offer clarity. 
+                </p>
+                <p class="text-premium-muted mb-8 leading-relaxed">
+                    Whether it's an unbiased breakdown of yesterday's cricket match, a poetic reflection on life's realities, or a sharp opinion on current events, every piece of content is crafted to make you pause, think, and engage.
+                </p>
+                <div class="flex items-center gap-4 text-premium-goldLight font-hindi text-xl border-l-2 border-premium-gold pl-4 italic">
+                    "यह सिर्फ सफ़र नहीं, सोच है।"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shorts" class="py-24 bg-premium-bg px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-xs uppercase tracking-[0.3em] text-premium-gold mb-2">The Cinema</h2>
+                    <h3 class="text-4xl font-serif font-bold">Latest Shorts</h3>
+                </div>
+                <div class="hidden sm:flex gap-2 text-premium-muted">
+                    <span class="text-sm border border-white/20 px-3 py-1 rounded-full"><i class="fa-solid fa-arrows-left-right"></i> Swipe</span>
+                </div>
+            </div>
+
+            <div class="flex overflow-x-auto gap-6 sm:gap-8 snap-x snap-mandatory hide-scroll-bar pb-8 pt-4">
+                
+                <div class="snap-center shrink-0 w-[280px] sm:w-[320px] premium-card bg-premium-card p-4 rounded-xl relative group">
+                    <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 z-10 rounded">NEW</div>
+                    <div class="relative w-full aspect-[9/16] rounded-lg overflow-hidden bg-black">
+                        <iframe class="absolute top-0 left-0 w-full h-full pointer-events-auto" src="https://www.youtube.com/embed/VIDEO_ID_1?controls=1" title="Short 1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[280px] sm:w-[320px] premium-card bg-premium-card p-4 rounded-xl">
+                    <div class="relative w-full aspect-[9/16] rounded-lg overflow-hidden bg-black">
+                        <iframe class="absolute top-0 left-0 w-full h-full pointer-events-auto" src="https://www.youtube.com/embed/VIDEO_ID_2?controls=1" title="Short 2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[280px] sm:w-[320px] premium-card bg-premium-card p-4 rounded-xl">
+                    <div class="relative w-full aspect-[9/16] rounded-lg overflow-hidden bg-black">
+                         <iframe class="absolute top-0 left-0 w-full h-full pointer-events-auto" src="https://www.youtube.com/embed/VIDEO_ID_3?controls=1" title="Short 3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[280px] sm:w-[320px] premium-card bg-premium-card p-4 rounded-xl flex items-center justify-center border-dashed">
+                    <div class="text-center p-6">
+                        <i class="fa-brands fa-youtube text-5xl text-premium-muted mb-4"></i>
+                        <h4 class="text-lg font-bold mb-2">Want More?</h4>
+                        <a href="https://youtube.com/@vikaskiyatra-m5k" target="_blank" class="text-premium-gold text-sm uppercase tracking-wider hover:underline">Visit Channel &rarr;</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="pillars" class="py-24 bg-premium-card px-4 sm:px-6 lg:px-8 border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] text-premium-gold mb-2">The Foundation</h2>
+                <h3 class="text-4xl font-serif font-bold">Three Pillars of Yatra</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="premium-card bg-premium-bg p-10 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-premium-card border border-premium-gold/30 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-gavel text-2xl text-premium-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-3 font-hindi">विचार</h3>
+                    <div class="w-10 h-px bg-premium-gold mb-4"></div>
+                    <p class="text-premium-muted text-sm leading-relaxed">Unfiltered, critical perspectives on current affairs. Breaking down the complex noise of the news into grounded, bite-sized reality.</p>
+                </div>
+                <div class="premium-card bg-premium-bg p-10 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-premium-card border border-premium-gold/30 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-feather text-2xl text-premium-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-3 font-hindi">कविता</h3>
+                    <div class="w-10 h-px bg-premium-gold mb-4"></div>
+                    <p class="text-premium-muted text-sm leading-relaxed">Words that resonate deeply. Poetry that acts as a mirror to society, connecting raw human emotion with everyday struggles and triumphs.</p>
+                </div>
+                <div class="premium-card bg-premium-bg p-10 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-premium-card border border-premium-gold/30 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-baseball-bat-ball text-2xl text-premium-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-3 font-hindi">क्रिकेट</h3>
+                    <div class="w-10 h-px bg-premium-gold mb-4"></div>
+                    <p class="text-premium-muted text-sm leading-relaxed">More than a game. Tactical analysis, emotional match reviews, and passionate storytelling for those who bleed the sport.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-premium-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <i class="fa-regular fa-paper-plane text-5xl text-premium-gold mb-6"></i>
+            <h2 class="text-4xl font-serif font-bold mb-4">Join The Yatra Community</h2>
+            <p class="text-premium-muted mb-10 max-w-2xl mx-auto">Don't miss a single thought. Follow the journey across platforms to engage in debates, enjoy the poetry, and celebrate cricket together.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.instagram.com/yatravikaski" target="_blank" class="bg-premium-card hover:bg-[#1a1a1a] border border-white/10 hover:border-pink-500 text-white font-semibold py-4 px-8 transition duration-300 flex items-center gap-3 w-full sm:w-auto justify-center">
+                    <i class="fa-brands fa-instagram text-xl text-pink-500"></i> Instagram
+                </a>
+                <a href="#" class="bg-premium-card hover:bg-[#1a1a1a] border border-white/10 hover:border-green-500 text-white font-semibold py-4 px-8 transition duration-300 flex items-center gap-3 w-full sm:w-auto justify-center">
+                    <i class="fa-brands fa-whatsapp text-xl text-green-500"></i> WhatsApp Channel
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-black border-t border-white/10 text-center">
+        <div class="font-serif font-bold text-2xl tracking-widest text-white/50 mb-6">
+            #VIKASKIYATRA
+        </div>
+        <p class="text-premium-muted text-sm font-light">
+            &copy; 2026 Vikas Ki Yatra. All thoughts reserved.<br>
+            <span class="font-hindi text-premium-goldLight mt-2 inline-block">यह सिर्फ सफ़र नहीं, सोच है।</span>
+        </p>
+    </footer>
+
+    <script>
+        const textToType = "विचार | कविता | क्रिकेट , यह सिर्फ सफ़र नहीं, सोच है";
+        let index = 0;
+        const speed = 80; // Slightly faster for a smoother premium feel
+
+        function typeWriter() {
+            if (index < textToType.length) {
+                document.getElementById("typewriter").innerHTML += textToType.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = () => {
+            setTimeout(typeWriter, 800); // Delayed start for drama
+        };
+    </script>
+</body>
+</html>
